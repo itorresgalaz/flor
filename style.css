@@ -1,0 +1,58 @@
+:root {
+  color-scheme: dark;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #080b0a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  overflow-x: hidden;
+  background: #080b0a;
+}
+
+main {
+  width: min(100%, 1000px);
+  padding: 0.75rem;
+  text-align: center;
+}
+
+#flower-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(100svh - 2.5rem);
+  margin: 0 auto;
+  border-radius: 0.25rem;
+  outline: none;
+  touch-action: manipulation;
+}
+
+.hint {
+  margin: -2rem 0 0;
+  color: #686e68;
+  font-size: 0.6875rem;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 0.5rem;
+  }
+
+  .hint {
+    margin-top: -1.6rem;
+  }
+}
